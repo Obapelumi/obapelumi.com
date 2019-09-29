@@ -2,15 +2,17 @@ export default {
     mounted() {
         this.pageMounter();
 
-        if (this.$store.state.firstLoad == false) {
-            this.burgerMenu();
+        if (this.$store.state.firstLoad == true) {
+            this.burgerMenu('close');
+            // this.$store.commit('toggleFirstLoad', false);
         }
-        
-        this.$store.commit('toggleFirstLoad', false);
+        else {
+            this.burgerMenu('open');
+        }
     },
     methods: {
-        burgerMenu() {
-            if ($("body").hasClass("menu-show")) {
+        burgerMenu(instruction = 'open') {
+            if (instruction == 'close') {
                 $("body").removeClass("menu-show");
                 $("#colorlib-main-nav > .js-colorlib-nav-toggle").removeClass("show");
             } else {
