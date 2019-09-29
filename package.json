@@ -1,7 +1,7 @@
 {
   "name": "obapelumi",
   "version": "1.0.0",
-  "description": "The People&#39;s Developer",
+  "description": "The People's Developer",
   "author": "Obapelumi",
   "private": true,
   "scripts": {
@@ -11,10 +11,10 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0",
     "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/pwa": "^2.6.0"
+    "@nuxtjs/pwa": "^2.6.0",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.4.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

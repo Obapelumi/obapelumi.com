@@ -1,101 +1,37 @@
 <template>
-  <div id="colorlib-hero" class="js-fullheight">
-    <div class="owl-carousel">
-      <div class="item">
-        <div class="hero-flex js-fullheight">
-          <div class="col-three-forth">
-            <div
-              class="hero-img js-fullheight"
-              style="background-image: url(images/generic-background.jpg);"
-            ></div>
-          </div>
-          <div class="col-one-forth js-fullheight">
-            <div class="display-t js-fullheight">
-              <div class="display-tc js-fullheight">
-                <h2 class="number">01/03</h2>
-                <div class="text-inner">
-                  <div class="desc">
-                    <span class="tag">Welcome</span>
-                    <h2>Photography is on it's way.</h2>
-                    <p>
-                      A small river named Duden flows by their place and supplies it with the
-                      necessary regelialia. It is a paradisematic country, in which roasted
-                      parts of sentences fly into your mouth.
-                    </p>
-                    <p>
-                      <a href="work.html" class="btn-view">
-                        View Galleries
-                        <i class="icon-arrow-right3"></i>
-                      </a>
-                    </p>
-                  </div>
+  <div id="colorlib-work">
+    <div class="container">
+      <div class="row text-center">
+        <h2 class="bold">Works</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-12" v-for="work in myWorks" :key="work.title">
+          <div class="work-entry-flex animate-box js-fullheight">
+            <div class="col-three-forth js-fullheight">
+              <div class="row no-gutters">
+                <div class="col-md-12 col-md-push-10 no-gutters">
+                  <div
+                    class="work-img js-fullheight"
+                    style="background-image: url(images/generic-background.jpg);"
+                  ></div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="hero-flex js-fullheight">
-          <div class="col-three-forth">
-            <div
-              class="hero-img js-fullheight"
-              style="background-image: url(images/generic-background.jpg);"
-            ></div>
-          </div>
-          <div class="col-one-forth js-fullheight">
-            <div class="display-t js-fullheight">
-              <div class="display-tc js-fullheight">
-                <h2 class="number">02/03</h2>
-                <div class="text-inner">
-                  <div class="desc">
-                    <span class="tag">Photography</span>
-                    <h2>Capture interesting things.</h2>
-                    <p>
-                      A small river named Duden flows by their place and supplies it with the
-                      necessary regelialia. It is a paradisematic country, in which roasted
-                      parts of sentences fly into your mouth.
-                    </p>
-                    <p>
-                      <a href="work.html" class="btn-view">
-                        View Galleries
-                        <i class="icon-arrow-right3"></i>
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="hero-flex js-fullheight">
-          <div class="col-three-forth">
-            <div
-              class="hero-img js-fullheight"
-              style="background-image: url(images/generic-background.jpg);"
-            ></div>
-          </div>
-          <div class="col-one-forth js-fullheight">
-            <h2 class="number">03/03</h2>
-            <div class="display-t js-fullheight">
-              <div class="display-tc js-fullheight">
-                <div class="text-inner">
-                  <div class="desc">
-                    <span class="tag">Discover</span>
-                    <h2>Discover New Things</h2>
-                    <p>
-                      A small river named Duden flows by their place and supplies it with the
-                      necessary regelialia. It is a paradisematic country, in which roasted
-                      parts of sentences fly into your mouth.
-                    </p>
-                    <p>
-                      <a href="work.html" class="btn-view">
-                        View Galleries
-                        <i class="icon-arrow-right3"></i>
-                      </a>
-                    </p>
+            <div class="col-one-forth js-fullheight">
+              <div class="row no-gutters">
+                <div class="col-md-12 col-md-pull-12 no-gutters">
+                  <div class="display-t js-fullheight">
+                    <div class="display-tc js-fullheight">
+                      <div class="text-inner text-inner-right">
+                        <h2>
+                          <a href="#">{{ work.title }}</a>
+                        </h2>
+                        <p>{{ work.description }}</p>
+                        <p>
+                          <!-- <a href="work-single.html" class="btn-view">Learn more</a> -->
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -108,8 +44,40 @@
 </template>
 
 <script>
-import globalMixin from '@/mixins/global'
+import globalMixin from "@/mixins/global";
 export default {
+  data: () => ({
+    myWorks: [
+      {
+        title: "Obapelumi.com",
+        description:
+          "This awesome website! One of the rather simple ones yet it makes me feel so proud",
+        link: "",
+        imagePath: ""
+      },
+      {
+        title: "VAMP Facilities Intelligence",
+        description:
+          "VAMP Facilities Intelligence is a smart solution for data-driven facilities management optimization. The tool collects data from sites and the market in order to drive real time analytics for optimizing facility operating costs, asset health and customer experience.",
+        link: "",
+        imagePath: ""
+      },
+      {
+        title: "ArtShop",
+        description:
+          "ArtShop is an e-commerce store driven towards promoting and selling Nigerian art. The project was built as a RESTful API on the backend using Laravel PHP and MySQL. The front-end is a Single Page Application (SPA) built with Vue.js.",
+        link: "",
+        imagePath: ""
+      },
+      {
+        title: "DemandPointe",
+        description:
+          "DemandPointe is a State Government revenue collection solution designed to provide a simple and fraud free taxation system. Developed with Vue.js, CodeIgniter/PHP & MySQL",
+        link: "",
+        imagePath: ""
+      }
+    ]
+  }),
   mixins: [globalMixin]
-}
+};
 </script>

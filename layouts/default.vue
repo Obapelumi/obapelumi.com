@@ -1,7 +1,11 @@
 <template>
   <div>
     <nav id="colorlib-main-nav" role="navigation">
-      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active" @click.prevent="burgerMenu()">
+      <a
+        href="#"
+        class="js-colorlib-nav-toggle colorlib-nav-toggle active"
+        @click.prevent="burgerMenu()"
+      >
         <i></i>
       </a>
       <div class="js-fullheight colorlib-table">
@@ -15,15 +19,12 @@
                 <nuxt-link tag="li" to="/work" exact-active-class="active">
                   <a>Work</a>
                 </nuxt-link>
-                <li>
-                  <a href="blog.html">Blog</a>
+                <!-- <li>
+                  <nuxt-link to="/articles">Articles</nuxt-link>
                 </li>
                 <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="contact.html">Contact</a>
-                </li>
+                  <nuxt-link to="/contact">Contact</nuxt-link>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -39,14 +40,18 @@
               <div class="colorlib-navbar-brand">
                 <nuxt-link class="colorlib-logo" to="/">OBAPELUMI</nuxt-link>
               </div>
-              <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" @click.prevent="burgerMenu()">
+              <a
+                href="#"
+                class="js-colorlib-nav-toggle colorlib-nav-toggle"
+                @click.prevent="burgerMenu()"
+              >
                 <i></i>
               </a>
             </div>
           </div>
         </div>
       </header>
-      <nuxt/>
+      <nuxt />
     </div>
   </div>
 </template>
