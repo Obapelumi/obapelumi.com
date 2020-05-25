@@ -12,7 +12,7 @@
                 <div class="col-md-12 col-md-push-10 no-gutters">
                   <div
                     class="work-img js-fullheight"
-                    style="background-image: url(images/generic-background.jpg);"
+                    :style="`background-image: url(${work.imagePath});`"
                   ></div>
                 </div>
               </div>
@@ -49,32 +49,18 @@ export default {
   data: () => ({
     myWorks: [
       {
-        title: "Obapelumi.com",
-        description:
-          "This awesome website! One of the rather simple ones yet it makes me feel so proud",
-        link: "",
-        imagePath: ""
-      },
-      {
         title: "VAMP Facilities Intelligence",
         description:
           "VAMP Facilities Intelligence is a smart solution for data-driven facilities management optimization. The tool collects data from sites and the market in order to drive real time analytics for optimizing facility operating costs, asset health and customer experience.",
         link: "",
-        imagePath: ""
-      },
-      {
-        title: "ArtShop",
-        description:
-          "ArtShop is an e-commerce store driven towards promoting and selling Nigerian art. The project was built as a RESTful API on the backend using Laravel PHP and MySQL. The front-end is a Single Page Application (SPA) built with Vue.js.",
-        link: "",
-        imagePath: ""
+        imagePath: "/images/vampfi.jpg"
       },
       {
         title: "DemandPointe",
         description:
           "DemandPointe is a State Government revenue collection solution designed to provide a simple and fraud free taxation system. Developed with Vue.js, CodeIgniter/PHP & MySQL",
         link: "",
-        imagePath: ""
+        imagePath: "/images/demandpointe.jpg"
       }
     ]
   }),

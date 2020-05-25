@@ -1,10 +1,29 @@
+header {
+  padding: 1.4em 0;
+}
+
 .main-lead-text {
   font-size: 38px;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .main-sub-text {
   margin-top: 0px;
   font-size: 28px;
   line-height: 1.2;
+}
+
+.about-flex .about-desc p a {
+  margin-right: 20px;
+}
+
+.about-desc .btn-view {
+  font-size: 13px;
+  letter-spacing: 7px;
+  color: #000;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  padding: 7px;
+  text-decoration: none;
 }
