@@ -71,6 +71,9 @@ export default {
       }
     ]
   }),
+  head: () => ({
+    title: "Work · Obapelumi"
+  }),
   mixins: [globalMixin]
 };
 </script>
