@@ -19,12 +19,6 @@
                 <nuxt-link tag="li" to="/work" exact-active-class="active">
                   <a>Work</a>
                 </nuxt-link>
-                <!-- <li>
-                  <nuxt-link to="/articles">Articles</nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="/contact">Contact</nuxt-link>
-                </li> -->
               </ul>
             </div>
           </div>

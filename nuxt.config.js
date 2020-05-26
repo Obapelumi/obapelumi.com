@@ -1,86 +1,87 @@
-const pkg = require('./package')
-
+const pkg = require("./package");
 
 module.exports = {
-  mode: 'spa',
+  mode: "spa",
 
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
-    title: 'Obapelumi',
+    title: "Obapelumi",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { hid: "description", name: "description", content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Karla:400,700' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700' },
-      { rel: 'stylesheet', href: '/css/animate.css' },
-      { rel: 'stylesheet', href: '/css/icomoon.css' },
-      { rel: 'stylesheet', href: '/css/bootstrap.css' },
-      { rel: 'stylesheet', href: '/css/owl.carousel.min.css' },
-      { rel: 'stylesheet', href: '/css/owl.theme.default.min.css' },
-      { rel: 'stylesheet', href: '/css/magnific-popup.css' },
-      { rel: 'stylesheet', href: '/css/style.css' },
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css?family=Karla:400,700"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700"
+      },
+      { rel: "stylesheet", href: "/css/animate.css" },
+      { rel: "stylesheet", href: "/css/icomoon.css" },
+      { rel: "stylesheet", href: "/css/bootstrap.css" },
+      { rel: "stylesheet", href: "/css/owl.carousel.min.css" },
+      { rel: "stylesheet", href: "/css/owl.theme.default.min.css" },
+      { rel: "stylesheet", href: "/css/magnific-popup.css" },
+      { rel: "stylesheet", href: "/css/style.css" }
     ],
     script: [
-      { src: '/js/modernizr-2.6.2.min.js' },
-      { src: '/js/jquery.min.js', body: true },
-      { src: '/js/jquery.easing.1.3.js', body: true },
-      { src: '/js/bootstrap.min.js', body: true },
-      { src: '/js/jquery.waypoints.min.js', body: true },
-      { src: '/js/owl.carousel.min.js', body: true },
-      { src: '/js/jquery.magnific-popup.min.js', body: true },
-      { src: '/js/magnific-popup-options.js', body: true },
+      { src: "/js/modernizr-2.6.2.min.js" },
+      { src: "/js/jquery.min.js", body: true },
+      { src: "/js/jquery.easing.1.3.js", body: true },
+      { src: "/js/bootstrap.min.js", body: true },
+      { src: "/js/jquery.waypoints.min.js", body: true },
+      { src: "/js/owl.carousel.min.js", body: true },
+      { src: "/js/jquery.magnific-popup.min.js", body: true },
+      { src: "/js/magnific-popup-options.js", body: true }
       // { src: '/js/main.js', body: true }
     ]
   },
 
   /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#333' },
+   ** Customize the progress-bar color
+   */
+  loading: { color: "#333" },
 
   /*
-  ** Global CSS
-  */
-  css: [
-    '@/assets/css/custom.css'
-  ],
+   ** Global CSS
+   */
+  css: ["@/assets/css/custom.css"],
 
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
+   ** Plugins to load before mounting the App
+   */
+  plugins: ["@/plugins/mixin"],
 
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     // '@nuxtjs/axios',
-    '@nuxtjs/pwa',
+    "@nuxtjs/pwa"
   ],
   /*
-  ** Axios module configuration
-  */
+   ** Axios module configuration
+   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) {
-
-    }
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {}
   }
-}
+};

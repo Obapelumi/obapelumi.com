@@ -50,7 +50,9 @@
                         <a href="https://github.com/obapelumi" target="__blank"
                           ><i class="icon-github"></i
                         ></a>
-                        <a href="https://twitter.com/crudecoder" target="__blank"
+                        <a
+                          href="https://twitter.com/crudecoder"
+                          target="__blank"
                           ><i class="icon-twitter2"></i
                         ></a>
                       </p>
