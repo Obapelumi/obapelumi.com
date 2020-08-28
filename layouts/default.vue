@@ -13,11 +13,29 @@
           <div class="row">
             <div class="col-md-12">
               <ul>
-                <nuxt-link tag="li" to="/" exact-active-class="active">
+                <nuxt-link
+                  tag="li"
+                  to="/"
+                  exact-active-class="active"
+                  @click.native="burgerMenu()"
+                >
                   <a>Home</a>
                 </nuxt-link>
-                <nuxt-link tag="li" to="/work" exact-active-class="active">
+                <nuxt-link
+                  tag="li"
+                  to="/work"
+                  exact-active-class="active"
+                  @click.native="burgerMenu()"
+                >
                   <a>Work</a>
+                </nuxt-link>
+                <nuxt-link
+                  tag="li"
+                  to="/articles"
+                  exact-active-class="active"
+                  @click.native="burgerMenu()"
+                >
+                  <a>Articles</a>
                 </nuxt-link>
               </ul>
             </div>
