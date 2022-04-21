@@ -51,7 +51,7 @@
                           ><i class="icon-github"></i
                         ></a>
                         <a
-                          href="https://twitter.com/crudecoder"
+                          href="https://twitter.com/0bapelumi"
                           target="__blank"
                           ><i class="icon-twitter2"></i
                         ></a>
