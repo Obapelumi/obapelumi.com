@@ -25,12 +25,16 @@
     class="flex flex-col space-y-2 pb-2 pt-4 max-w-xs mx-auto rounded-t-xl shadow-2xl justify-center sm:sticky bottom-0 backdrop-blur-xl"
   >
     <div class="items-center justify-center space-x-8 flex">
-      <a href="https://github.com/obapelumi" target="__blank"
-        ><IconsGithub class="h-6 text-gray-600 hover:fill-gray-600"
-      /></a>
-      <a href="https://twitter.com/0bapelumi" target="__blank"
-        ><IconsTwitter class="h-6 text-gray-600 hover:fill-gray-600"
-      /></a>
+      <a href="https://github.com/obapelumi" target="__blank">
+        <IconsGithub
+          class="h-6 text-gray-400 fill-gray-400 hover:fill-gray-500 hover:text-gray-500"
+        />
+      </a>
+      <a href="https://twitter.com/0bapelumi" target="__blank">
+        <IconsTwitter
+          class="h-6 text-gray-400 fill-gray-400 hover:fill-gray-500 hover:text-gray-500"
+        />
+      </a>
     </div>
     <span class="text-center text-gray-600 text-xs"
       >Copyright &copy; {{ currentYear }} · All rights reserved</span

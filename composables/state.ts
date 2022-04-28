@@ -55,7 +55,7 @@ export const useWork = () =>
       year: 2019,
       company: {
         name: 'Filmo Real Estaate',
-        website: 'https://filmorealty.com'
+        website: 'https://www.filmorealestate.com/'
       }
     },
     {
